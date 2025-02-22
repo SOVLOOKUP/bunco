@@ -1,9 +1,9 @@
-# bunc
+# bunco
 
 compile JS/TS file to one single executable file using Bun
 
 ```bash
-$ bunx bunc -t all -c ./src/main.ts
+$ bunx bunco -t all -c ./src/main.ts
 ./compile
 │  main-darwin-arm64
 │  main-darwin-x64
@@ -20,8 +20,8 @@ $ bunx bunc -t all -c ./src/main.ts
 ```
 
 ```bash
-$ bunc -h           
-Usage: bunc [options] <inputFile <string>>
+$ bunco -h           
+Usage: bunco [options] <inputFile <string>>
 
 CLI to compile JS/TS file to one single executable file using Bun
 
