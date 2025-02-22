@@ -3,7 +3,20 @@
 compile JS/TS file to one single executable file using Bun
 
 ```bash
-bunx bunc -c ./src/index.ts
+$ bunx bunc -t all -c ./src/main.ts
+./compile
+│  main-darwin-arm64
+│  main-darwin-x64
+│  main-linux-arm64
+│  main-linux-x64
+│  main-windows-x64.exe
+│
+└─compressed
+        main-darwin-arm64.7z
+        main-darwin-x64.7z
+        main-linux-arm64.7z
+        main-linux-x64.7z
+        main-windows-x64.7z
 ```
 
 ```bash
