@@ -1,5 +1,5 @@
 {
-  "name": "compiler",
+  "name": "bunc",
   "description": "CLI to compile JS/TS file to one single executable file using Bun",
   "bin": "dist/main.js",
   "module": "src/index.ts",

@@ -13,10 +13,11 @@ program
     "platform/arch target | support: " + "all or " + vs.join(",")
   )
   .option("-o, --outputDir <string>", "output directory | default: compile")
-  .option("-b, --bytecode", "compile to bytecode")
+  .option("-n, --name <string>", "output name")
+  .option("-i, --iconPath <string>", "icon path")
   .option("-c, --compress", "compress output to outputDir/compressed")
   .option("-m, --hideConsole", "hide console window")
-  .option("-i, --iconPath <string>", "icon path")
+  .option("-b, --bytecode", "compile to bytecode")
   .argument("inputFile <string>", "file to compile")
   .action(async (inputFile, options) => {
     const compress = options.compress;
@@ -24,6 +25,7 @@ program
     const hideConsole = options.hideConsole;
     const outputDir = options.outputDir;
     const icon = options.iconPath;
+    const name = options.name;
     const target =
       options.target === "all" ? "all" : options.target?.split(",");
 
@@ -34,6 +36,7 @@ program
       compress,
       hideConsole,
       icon,
+      name,
       bytecode,
     });
   });
