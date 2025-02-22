@@ -52,3 +52,20 @@ Options:
   -b, --bytecode            compile to bytecode
   -h, --help                display help for command
 ```
+
+## API
+
+```ts
+import { compile } from "bunco"
+
+await compile({
+  outputDir,
+  inputFile,
+  target,
+  compress,
+  hideConsole,
+  icon,
+  name,
+  bytecode,
+});
+```
