@@ -2,6 +2,17 @@
 
 compile JS/TS file to one single executable file using Bun
 
+ - compile 
+
+```bash
+$ npx bunco ./src/main.ts
+./compile
+│ 
+└─main-windows-x64.exe
+```
+
+ - cross compile and compress
+
 ```bash
 $ npx bunco -t all -c ./src/main.ts
 ./compile
@@ -18,6 +29,8 @@ $ npx bunco -t all -c ./src/main.ts
         main-linux-x64.7z
         main-windows-x64.7z
 ```
+
+## bunco -h 
 
 ```bash
 $ bunco -h           
