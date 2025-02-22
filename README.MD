@@ -5,7 +5,7 @@ compile JS/TS file to one single executable file using Bun
  - compile 
 
 ```bash
-$ npx bunco ./src/main.ts
+$ bun x bunco ./src/main.ts
 ./compile
 │ 
 └─main-windows-x64.exe
@@ -14,7 +14,7 @@ $ npx bunco ./src/main.ts
  - cross compile and compress
 
 ```bash
-$ npx bunco -t all -c ./src/main.ts
+$ bun x bunco -t all -c ./src/main.ts
 ./compile
 │  main-darwin-arm64
 │  main-darwin-x64
