@@ -1,10 +1,10 @@
 {
   "name": "bunco",
-  "description": "CLI to compile JS/TS file to one single executable file using Bun",
+  "description": "Compile JS/TS to one single executable file using Bun. Alternative for pkg and ncc.",
   "bin": "dist/main.js",
   "module": "src/index.ts",
   "main": "src/index.ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "dependencies": {
     "7zip-min": "^2.0.0",

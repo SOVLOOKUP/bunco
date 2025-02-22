@@ -1,6 +1,6 @@
 # bunco
 
-compile JS/TS file to one single executable file using Bun
+Compile JS/TS to one single executable file using Bun. Alternative for pkg and ncc.
 
  - compile 
 
