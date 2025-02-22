@@ -3,7 +3,7 @@
 compile JS/TS file to one single executable file using Bun
 
 ```bash
-$ bunx bunco -t all -c ./src/main.ts
+$ npx bunco -t all -c ./src/main.ts
 ./compile
 │  main-darwin-arm64
 │  main-darwin-x64
