@@ -12,6 +12,8 @@ const platforms = z.enum([
   "windows-x64",
   "darwin-x64",
   "darwin-arm64",
+  "linux-x64-musl",
+  "linux-arm64-musl"
 ]);
 
 const allPlatforms = z.array(platforms).or(z.literal("all")).optional();
